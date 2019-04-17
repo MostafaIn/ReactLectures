@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Getting start ReactJS</title>
+</head>
+<body>
+    <div id="root">
+
+    </div>
+
+
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+    <script type="text/babel">
+    const rootElement= document.getElementById('root');
+    let year= 2019;
+    let firstName='mostafa';
+    let lastName='hazareh';
+    let a=3;
+    let b=2;
+        const copyrightYear= new Date().getFullYear();
+    const Header= function(){
+        return <header>
+    <h1>let's start React! {year}</h1>
+    <p> my name is {firstName}, and my last name is {lastName}.</p>
+    <p> {a} + {b} = {a+b}</p>
+    </header>;
+    }
+    const Main= function(){
+        return <main>
+        <h2>what is REACT ?</h2>
+        <h5>to get started React you should know about: </h5>
+        <ul>
+        <li>html</li>
+        <li>css</li>
+        <li>javascript</li>
+        </ul>
+    </main>;
+    }
+    const Footer= function(){
+        return <footer>
+    <p> CopyRight &copy;  {copyrightYear}</p>
+    </footer>;
+    }
+   // React, ReactDOM
+        // ReactDOM.render(header,rootElement);
+        // ReactDOM.render(main,rootElement);
+        // ReactDOM.render(footer,rootElement);
+        const App= function(){
+            return <div>
+        <Header/>
+        <Main/>
+        <Footer/>
+        </div>;
+        }
+
+        ReactDOM.render(<App/>,rootElement);
+        console.log('start');
+        // const jsx= <h1>what is jsx</h1>;
+        // console.log(jsx);
+    </script>
+</body>
+</html>
