@@ -10,7 +10,7 @@ this is the Intro lectures and practices for ReactJS on 17APR2019
 
 ## Technologies
 
-- Basic of ReactJS
+- Basic of React.JS
 
 ## Licence
 
