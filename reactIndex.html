@@ -1,70 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Getting start ReactJS</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Getting Started React</title>
 </head>
+
 <body>
     <div id="root">
 
     </div>
-
-
-
     <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-
-
     <script type="text/babel">
-    const rootElement= document.getElementById('root');
-    let year= 2019;
-    let firstName='mostafa';
-    let lastName='hazareh';
-    let a=3;
-    let b=2;
-        const copyrightYear= new Date().getFullYear();
-    const Header= function(){
-        return <header>
-    <h1>let's start React! {year}</h1>
-    <p> my name is {firstName}, and my last name is {lastName}.</p>
-    <p> {a} + {b} = {a+b}</p>
-    </header>;
-    }
-    const Main= function(){
-        return <main>
-        <h2>what is REACT ?</h2>
-        <h5>to get started React you should know about: </h5>
-        <ul>
-        <li>html</li>
-        <li>css</li>
-        <li>javascript</li>
-        </ul>
-    </main>;
-    }
-    const Footer= function(){
-        return <footer>
-    <p> CopyRight &copy;  {copyrightYear}</p>
-    </footer>;
-    }
-   // React, ReactDOM
-        // ReactDOM.render(header,rootElement);
-        // ReactDOM.render(main,rootElement);
-        // ReactDOM.render(footer,rootElement);
-        const App= function(){
-            return <div>
-        <Header/>
-        <Main/>
-        <Footer/>
-        </div>;
+      const rootElement = document.getElementById("root");
+    let numOne = 3;
+    let numTwo = 2;
+  const techs = ['HTML', 'CSS','JS','React']
+    const studentData = [
+        {
+            firstName:'Mostofa',
+            lastName:'Mostofa',
+            imgUrl:'https://st2.depositphotos.com/4111759/12123/v/950/depositphotos_121233262-stock-illustration-male-default-placeholder-avatar-profile.jpg',
+            title:'Junior Developer'
+        },
+         {
+            firstName:'Masood',
+            lastName:'Masood',
+            imgUrl:'https://st2.depositphotos.com/4111759/12123/v/950/depositphotos_121233262-stock-illustration-male-default-placeholder-avatar-profile.jpg',
+            title:'Junior Developer'
+        },
+         {
+            firstName:'Evans',
+            lastName:'Evans',
+            imgUrl:'https://st2.depositphotos.com/4111759/12123/v/950/depositphotos_121233262-stock-illustration-male-default-placeholder-avatar-profile.jpg',
+            title:'Junior Developer'
+        },
+         {
+            firstName:'Koray',
+            lastName:'Koray',
+            imgUrl:'https://st2.depositphotos.com/4111759/12123/v/950/depositphotos_121233262-stock-illustration-male-default-placeholder-avatar-profile.jpg',
+            title:'Junior Developer'
         }
+    ]
+  const styles = {
+            background:'#888',
+            color:'orange'
+        }
+     const Header = function (props) {
+         return <header>
+        <div style={styles}>
+     <h3>{props.title}</h3>
+     <p>Teacher: {props.firstName} {props.lastName}</p>
+     <p>Year:{props.year.getFullYear()}</p>
+     <p>The sum of {numOne} + {numTwo} = {numOne + numTwo}. </p>
+     <hr />
+     </div>
+     </header>;
+     }
+    
+     const Main = function ({title, subtitle, techs}){
+const renderTechs = () =>  techs.map((tech, index) => <li key ={'tech' + index}>{tech}</li>)
+         return <main>
+     <h2>{title} </h2>
+     <p>{subtitle}</p>
+    
+     <ul>
+     {renderTechs()}
+     </ul>
+     <hr />
+     </main>
 
-        ReactDOM.render(<App/>,rootElement);
-        console.log('start');
-        // const jsx= <h1>what is jsx</h1>;
-        // console.log(jsx);
+     } 
+     const Footer = function ({title, copyRight}) {
+         return <footer>
+     <p>{title} {copyRight.getFullYear()}</p>
+     </footer>
+     }
+     //React, ReactDOM
+    const Student = function ({firstName, lastName, title, imgUrl} ) {
+      return <div>
+      <img src = {imgUrl} style = {{width:"25%"}} />
+      <h4>Name of student: {firstName} {lastName}</h4>
+      <p>Title: {title}</p>
+      </div>
+  }
+     const App = function (props) {
+         const renderStudents = () => {
+             return studentData.map(({firstName, lastName, imgUrl, title}, index) => {
+         return <Student key = {'student' + index} firstName = {firstName}
+     lastName = {lastName}
+     imgUrl = {imgUrl}
+     title = {title}
+     />
+
+     })
+         }
+         return <div>
+     <Header 
+     title = "Lets Get Started with React" 
+     firstName = "Asabeneh"
+     lastName="Yetayeh"
+     year = {new Date ()}
+     />
+     {renderStudents()}
+     
+    
+
+     <Main 
+     title = "What is React ?"
+     subtitle = "To get started react you should have:"
+     techs = {['HTML', 'CSS','JS','React']}
+     />
+     <Footer 
+     title = "Copyright &copy;"
+     copyRight = {new Date ()}
+     />
+
+     </div>
+     }
+
+
+     ReactDOM.render(<App>
+     </App>, rootElement)
+     
+       
     </script>
 </body>
+
 </html>
