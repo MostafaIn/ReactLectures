@@ -2,9 +2,7 @@
 
 this is the Intro lectures and practices for ReactJS on 17APR2019
 
-## Demo
 
-[ReactLectures01](https://mostafain.github.io/ReactLectures/ReactIndex.html)
 
 
 
