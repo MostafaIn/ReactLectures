@@ -6,15 +6,18 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background:
+
 }
 
 header{
-    background: #444;
+    background: #0c1a2c;
     color:orange;
     font-size: 30px;
     text-align:center;
     padding: 20px;
+}
+header h4,p{
+  margin:0;
 }
 footer{
   background-color: #0c1a2c;
