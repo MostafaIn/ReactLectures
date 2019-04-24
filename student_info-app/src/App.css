@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+}
+
+header, footer{
+  color:rgb(253, 214, 188);
+  background-color: rgb(17, 18, 65);
+  padding: 20px;
+}
+.header h4,p{
+  margin: 0;
+}
+div.studentInfo{
+  border: 2px solid #bbb;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  padding: 40px;
+  width: 40%;
+  margin: 20px auto auto;
+}
+.studentInfo img{
+  border: 1px outset #cecece;
+  border-radius: 50%;
+  width: 100px;
+}
+.studentInfo h2,h4{
+  margin: 0; 
+}
+
