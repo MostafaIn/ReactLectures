@@ -1,4 +1,4 @@
-# ReactJS tutorials and Practical mini projects
+# ReactJS Tutorials and Practical mini projects
 
 >by Integrify
 
@@ -7,7 +7,9 @@
 2. student_info-app
 3. (ongoing ...)
 
-[](react.png)
+### ReactJS
+
+![ReactJS](react.png)
 
 
 ## Technologies
@@ -25,7 +27,9 @@ Project is: ongoing_,
 ## Contact
 
 Author:  
-[Mostafa](https://github.mostafaIn.com) 
+[Mostafa]
+(https://github.mostafaIn.com) 
 
 feel free to contact me!
-[Email:](mostafa.hazareh@integrify.io)
+[Email:]
+(mostafa.hazareh@integrify.io)
