@@ -1,0 +1,74 @@
+
+header{
+    background-color: #525252;
+    color: white;
+}
+.headSection{
+  width: 80%;
+  height: auto;
+  margin: 0 auto 40px;
+  display: flex;
+}
+div.headTitle{
+    flex-basis: 50%;
+    margin: auto;
+}
+.headTitle img{
+    width: 100%;
+    /* height: 100%; */
+}
+.headTitle p{
+    font-size: calc(0.8vw + 14px);
+    color: #ebe7e772;
+    
+}
+.headTitle p > span{
+    color: white;
+}
+.headTitle button{
+    padding: 10px 40px;
+    color: white;
+    background-color: #5595d1;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+ /* next */
+.headFocus{
+    width: 80%;
+    margin: auto;
+    background: #5595d1;
+    padding: 0 20px;
+    display: flex;
+}
+.tri{
+    width: 0;
+      height: 0;
+      border-top: 40px solid #5595d1;
+      border-right: 40px solid transparent;
+      margin-left: 140px;
+      margin-top: -20px;
+      position: absolute;
+      z-index: 1;
+}
+.headFocus p{
+     flex: 3;
+     font-size: calc(0.5vw + 12px);
+ }
+ 
+.headFocus button{
+    padding: 1vw 4vw;
+    color: #525252;
+    background-color: white;
+    border-radius: 3px;
+    font-size: calc(0.3vw + 10px);
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    margin: 10px;
+}
+.borderLine img{
+    width: 100%;
+    height: 10px;
+}

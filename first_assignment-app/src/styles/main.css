@@ -1,0 +1,251 @@
+main {
+  top:0;
+  background-color: #eee;
+  display: inline-block;
+  width: auto;
+}
+.section1 {
+  width: 85%;
+  margin: 70px auto;
+  display: flex;
+  flex-wrap:nowrap;
+}
+.items {
+  flex: 1;
+  padding: 20px;
+  opacity: 0.8;
+  text-align: center;
+  flex-direction: column;
+  line-height: 2;
+  font-size: calc(0.6vw + 9px);
+}
+.items:hover {
+  opacity: 1;
+  color: black;
+  position: relative;
+  background: white;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  border-radius: 2%;
+}
+.items:hover .icons {
+  background-color: rgb(84, 145, 216);
+}
+.items:hover::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid white;
+  border-right: 20px solid transparent;
+  border-top: 20px solid white;
+  border-bottom: 20px solid transparent;
+  left: 0;
+  bottom: -35px;
+}
+.icons {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #404040;
+  margin: auto;
+}
+.icons i {
+  padding-top: 20px;
+  font-size: 30px;
+  color: white;
+}
+.textPart p {
+  margin: 25px 0;
+}
+.readMore button{
+  padding: 10px 40px;
+    color: white;
+    background-color: #5595d1;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+div.borderLine2{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.borderLine2 img{
+    flex: 2;
+    width: 100%;
+    height: 10px;
+}
+.borderLine2 p{
+    flex: 1;
+    text-align: center;
+    color: #525252;
+}
+/* this is the second portion of main  */
+.section2 {
+  width: 85%;
+  margin: 70px auto;
+  display: flex;
+  flex-wrap:nowrap;
+  justify-content: space-between;
+}
+.blogs {
+  flex-basis: 30%;
+  color: #585858;
+  position: relative;
+  background-color: white;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  border-radius: 2%;
+}
+.blogs::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid white;
+  border-right: 20px solid transparent;
+  border-top: 20px solid white;
+  border-bottom: 20px solid transparent;
+  left: 0;
+  bottom: -35px;
+}
+.blogs img {
+  width: 100%;
+}
+.blogTitle {
+  padding: 20px;
+}
+
+.borderLine3{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.borderLine3 img.longLine{
+    flex:3;
+    height: 10px;
+}
+.borderLine3 img.shortLine{
+    flex: 2;
+    height: 10px;
+}
+.borderLine3 p{
+    flex: 1;
+    text-align: center;
+    padding: 0 20px;
+    color: #525252;
+}
+/* ///////////////////////////////////// */
+.section3 {
+  width: 85%;
+  margin: 0 auto 80px;
+  display: flex;
+  justify-content: center;
+}
+.testimonials {
+  flex: 1.5;
+  display: flex;
+  flex-flow: wrap;
+  width: auto;
+}
+.development {
+  flex: 1;
+
+}
+.johnSmith {
+  margin: 18px;
+  width: 40%;
+  height: 200px;
+  color: #585858;
+  position: relative;
+  background-color: white;
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  border-radius: 2%;
+  padding-left: 10px;
+}
+.johnSmith::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 20px solid white;
+  border-right: 20px solid transparent;
+  border-top: 20px solid white;
+  border-bottom: 20px solid transparent;
+  left: 0;
+  bottom: -25px;
+}
+.johnSmith h3 {
+  line-height: 2;
+}
+
+/* this is for TAB */
+
+.tabs {
+  list-style-type: none;
+  margin: 18px 0 0 30px;
+  position: relative;
+  background-color: white;
+  box-shadow: 0 0 11px rgba(0, 0, 0, 0.2);
+
+  height: 435px;
+  color: #585858;
+  border-radius: 2%;
+  padding: 25px 15px;
+}
+.tabs .tabContent {
+  display: none;
+  position: absolute;
+}
+.tabContent {
+  padding: 30px 20px;
+}
+.tabs li {
+  float: left;
+}
+.tabs li > input {
+  display: none;
+}
+.tabs li > label {
+  display: inline-block;
+  border: 1px solid black;
+  border-right-width: 0;
+  border-bottom-width: 0;
+  line-height: 30px;
+  padding: 15px 25px;
+  cursor: pointer;
+  color: #585858;
+  border: 1px solid transparent;
+}
+
+.tabs li > input:checked + label {
+  color: black;
+  font-weight: bold;
+}
+.tabs li > input:checked ~ .tabContent {
+  display: block;
+  color: black;
+}
+.firstChild {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(84, 145, 216);
+  padding: 15px 25px;
+  border-radius: 5%;
+  margin: 120px 5px 0 160px;
+  position: absolute;
+}
+.lastChild {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(84, 145, 216);
+  padding: 15px 25px;
+  border-radius: 5%;
+  margin: 30px 0 0 35px;
+  position: absolute;
+}

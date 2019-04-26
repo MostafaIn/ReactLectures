@@ -1,0 +1,121 @@
+.footerWrapper{
+    background-color: #525252;
+    top: 0;
+    padding: 0;
+    /* height: 10vh; */
+}
+.footFocus{
+    width: 80%;
+    margin: auto;
+    background: #5595d1;
+    padding: 0 20px;
+    display: flex;
+}
+.footFocus p{
+     flex: 3;
+     font-size: calc(0.5vw + 12px);
+     color: white;
+ }
+ 
+.footFocus button{
+    padding: 1vw 4vw;
+    color: #525252;
+    background-color: white;
+    border-radius: 3px;
+    font-size: calc(0.3vw + 10px);
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    margin: 10px;
+}
+.tri2{
+    width: 0;
+      height: 0;
+      border-top: 40px solid #5595d1;
+      border-right: 40px solid transparent;
+      margin-left: 140px;
+      margin-top: 0;
+      position: absolute;
+      z-index: 1;
+}
+/* ///////////////////////////////// */
+.infoItems {
+    margin: 40px auto;
+    width: 85%;
+  display: flex;
+}
+.infoItem {
+    flex: 1;
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+}
+.infoItem h3 {
+  color: white;
+}
+.infoItem p,
+.infoItem address {
+  color: #909090;
+}
+.infoItem p:hover{
+  color: rgb(110, 170, 226);
+  cursor: pointer;
+}
+.infoItem p > span {
+  color: white;
+}
+
+
+
+.flickrBoxes{
+    background-color: #eee;
+    width: 100%;
+    height: 100%;
+}
+.gridItem{
+  background-color: rgba(8, 7, 7, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  font-size: 10px;
+  text-align: center;
+}
+
+
+
+
+/* COPYRIGHTS INFO */
+div.lastPart{
+  background: #363636;
+  color: #878787;
+  padding: 15px;
+  margin-top: 30px;
+}
+.copyRight {
+    margin:auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.lastElement1{
+  flex: 2;
+  font-size: calc(0.4vw + 8px);
+}
+.lastElement2{
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: calc(1.5vw + 12px);
+}
+.lastElement3{
+    flex: 1;
+    font-size: calc(2.3vw + 18px);
+    text-align: end;
+}
+
+.Icons i:hover{
+    cursor: pointer;
+    color:white;
+    transition: 500ms ease-in-out;
+    transform: scale(1.2);
+
+}
