@@ -5,12 +5,15 @@ import Student from './components/Student';
 import studentData from './studentData';
 import Footer from './components/Footer';
 import { SSL_OP_NO_TLSv1_1 } from 'constants';
+
 function App() {
   const studentComponents = studentData.map(student =>
     <Student key={student.id} picture={student.src}
       name={student.firstName + " " + student.lastName}
       title={student.title}
       skills={student.skills} />)
+
+
   return (
     <div className="App">
       <Header
@@ -18,13 +21,7 @@ function App() {
         const lastName='Yatayeh'
         const year={new Date().getFullYear()}
       />
-      {studentComponents.sort((a, b) => {
-        if (a.firstName < b.firstName) {
-          return 1;
-        } else {
-          return -1;
-        }
-      })}
+      {studentComponents}
       <Footer />
     </div>
   );
