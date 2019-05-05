@@ -2,11 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 // import App from './components/App.js';
 import './index.css';
-import TestApp from './components/practice';
+// import TestApp from './components/practice';
+// import First from './components/First'
+import AppF from './components/AppF'
 
 
+ReactDOM.render(<AppF />, document.getElementById('root'));
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
 
 
