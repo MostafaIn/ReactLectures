@@ -5,7 +5,10 @@ import App from './App';
 import Test from './Test'
 import Handler from './Handler'
 import HandelState from './HandelState'
+import MyInfo from './components/MyInfo';
+import SecondApp from './SecondApp';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+
+ReactDOM.render(<SecondApp />, document.getElementById('root'));
 
 

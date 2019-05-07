@@ -1,0 +1,47 @@
+.App {
+ 
+}
+
+.App button,input{
+  padding: 10px;
+  margin: 10px;
+  font-size: 18px;
+  width: 120px;
+}
+header{
+  background-color:#162b16;
+  padding: 20px;
+  color: orange;
+   text-align: center;
+}
+div.counter{
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.counter >button{
+  border-radius: 30px;
+  color: white;
+  background-color: #161616;
+  font-size: 2rem;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+}
+.counter > h3{
+  font-size: 2rem;
+}
+div.addList{
+  border: 1px solid black;
+  padding: 20px;
+  width: 60%;
+  margin: auto;
+}
+
+.delBtn{
+  color:red;
+  border:none;
+  outline: none;
+  cursor: pointer;
+}
