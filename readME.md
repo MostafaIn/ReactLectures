@@ -9,7 +9,8 @@
 4. socond_react_lecture(28-Apr-19)
 5. react-boiler-plate-2019{clone from Asabeneh repository}(29-Apr-19)
 6. memeGenerator{practice it from scribma React Tutorial}(2-May-19)
-7. ( on going ... )
+7.socond_react_lecture(5-May-19)
+8. ( on going ... )
 
 ### ReactJS
 
