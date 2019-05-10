@@ -1,0 +1,29 @@
+header{
+    color: palegoldenrod;
+    background-color: mediumaquamarine;
+}
+header > h1{
+    padding: 3vw;
+    font-size:calc(1vw + 1rem);
+}
+form > button{
+    padding: 10px;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    color:palegoldenrod;
+    background-color: mediumaquamarine;
+    width: 140px;
+    font-size:calc(.6vw + 14px);
+}
+.inputField > input[type='text'],input[type='number']{
+    border:none;
+    border-bottom: 2px solid mediumaquamarine;
+    padding: 20px 20px 5px;
+    outline: none;
+    width: 160px;
+}
+.error{
+    color: red;
+}
+ 
