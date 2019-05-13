@@ -6,12 +6,14 @@
 1. my_first_react-app (19-Apr-2019)
 2. student_info-app (23-Apr-2019)
 3. First_assignment-app (26-Apr-19)
-4. socond_react_lecture(28-Apr-19)
+4. socond_lecture-components and props(28-Apr-19)
 5. react-boiler-plate-2019{clone from Asabeneh repository}(29-Apr-19)
 6. memeGenerator{practice it from scribma React Tutorial}(2-May-19)
-7.third_react_lecture(5-May-19)
-9.forth_react_lecture (8-May-19)
-10. ( on going ... )
+7.third_lecture-Todos app(5-May-19)
+9.forth_lecture-React Form (8-May-19)
+11.fifth_lecture-Router (13-May-19)
+12. ( on going ... )
+
 
 ### ReactJS
 
