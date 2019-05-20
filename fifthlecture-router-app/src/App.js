@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Switch,Prompt,Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Prompt, Redirect } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
@@ -16,7 +16,7 @@ const User = ({ match }) => {
 
 class App extends Component {
   state = {
-    isLoggedIn:false
+    isLoggedIn: false
   };
   handleLogIn = () => {
     this.setState({
@@ -25,17 +25,17 @@ class App extends Component {
   };
   render() {
     const { isLoggedIn } = this.state;
-    const status = isLoggedIn ? 'Log In' : 'Log Out';
+    const status = isLoggedIn ? 'Log Out' : 'Log In';
     return (
       <Router>
         <div className="App">
           <Header />
           <NavBar />
           <button onClick={this.handleLogIn}>{status}</button>
-          <Prompt 
+          <Prompt
             when={!isLoggedIn}
-            message={location =>{
-              if(location.pathname.startsWith('/topics')){
+            message={location => {
+              if (location.pathname.startsWith('/topics')) {
                 return 'Are you sure to leave this page?';
               }
             }}
@@ -43,7 +43,7 @@ class App extends Component {
           <Switch>
             <Route path="/About" component={About} />
             <Route path="/Contact" component={Contact} />
-            <Route path="/Topics" component={props =>{
+            <Route path="/Topics" component={props => {
               return isLoggedIn ? <Topics {...props} /> : <Redirect to="/" />;
             }} />
             <Route path="/user/:username" exact strict component={User} />
