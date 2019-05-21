@@ -1,0 +1,42 @@
+form{
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  margin: 20px auto ;
+}
+form input{
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #03454c;
+  font-size: 1rem;
+  outline:none;
+}
+form > button{
+  padding: 10px;
+  border-radius: 25px;
+  width: 120px;
+  cursor: pointer;
+  outline:none;
+   font-size: 1.2rem;
+   color: #03454c;
+}
+.user{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 65%;
+  margin: 20px auto ;
+}
+.controllers i{
+  padding: 20px;
+  cursor: pointer;
+  color:#03454c;
+}
+i:hover{
+  color:darkred;
+}
+
+.feedback{
+  text-align: center;
+  color: darkred;
+}
