@@ -9,10 +9,12 @@
 4. second_lecture-components and props(28-Apr-19)
 5. react-boiler-plate-2019{clone from Asabeneh repository}(29-Apr-19)
 6. memeGenerator{practice it from scribma React Tutorial}(2-May-19)
-7.third_lecture-Todos app(5-May-19)
-9.forth_lecture-React Form (8-May-19)
-11.fifth_lecture-Router (13-May-19)
-12. ( on going ... )
+7. third_lecture-Todos app(5-May-19)
+9. forth_lecture-React Form (8-May-19)
+11. fifth_lecture-Router (13-May-19)
+12. sixth_lecture-CRUD (16-May-19)
+13. seventh-lecture intro-redux (23-May-19)
+14. ( on going ... )
 
 
 ### ReactJS

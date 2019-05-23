@@ -27,13 +27,13 @@ export default class App extends Component {
         });
     }
     handleSubmit = (e) => {
-        const { firstName, lastName } = this.state;
+        const { firstName, lastName } = this.state
         e.preventDefault();
         const user = {
             id: uuidv4(),
-            firstName: this.state.firstName,
-            lastName: this.state.lastName,
-            age: this.state.age
+            firstName,
+            lastName,
+            age: this.state.age,
         };
         if (!firstName || !lastName) {
             this.setState({
@@ -42,7 +42,10 @@ export default class App extends Component {
         } else {
             this.setState({
                 users: [...this.state.users, user],
-                feedback: ''
+                feedback: '',
+                firstName: '',
+                lastName: '',
+                age: ""
             });
         }
     }
@@ -53,26 +56,26 @@ export default class App extends Component {
             users: newUsers
         });
     }
-    handleUpdate =(e,index)=>{
+    handleUpdate = (e, index) => {
         e.preventDefault();
-        const updatedUser={
+        const updatedUser = {
             firstName: this.state.firstName,
             lastName: this.state.lastName
         };
-        const sliced=[...this.state.users.slice(0,index),updatedUser,...this.state.users.slice(index+1)];
-    this.setState({
-        users:sliced
-    });
+        const sliced = [...this.state.users.slice(0, index), updatedUser, ...this.state.users.slice(index + 1)];
+        this.setState({
+            users: sliced
+        });
     }
     render() {
-        const { users, feedback,isEditting,setEdittingID } = this.state;
+        const { users, feedback, isEditting, setEdittingID } = this.state;
         return (
             <div>
                 <Header />
                 <form onSubmit={this.handleSubmit}>
-                    <input type="text" name="firstName" placeholder='First Name:' onChange={this.handleChange} />
-                    <input type="text" name="lastName" placeholder='Last Name:' onChange={this.handleChange} />
-                    <input type="number" name="age" placeholder='Age:' onChange={this.handleChange} />
+                    <input type="text" value={this.state.firstName} name="firstName" placeholder='First Name:' onChange={this.handleChange} />
+                    <input type="text" value={this.state.lastName} name="lastName" placeholder='Last Name:' onChange={this.handleChange} />
+                    <input type="number" value={this.state.age} name="age" placeholder='Age:' onChange={this.handleChange} />
                     <button>submit</button>
                 </form>
                 <h3 className="feedback">{feedback}</h3>
@@ -86,11 +89,11 @@ export default class App extends Component {
                             <h3>Age: {user.age}</h3>
                             <div className="controllers">
                                 <i onClick={() => this.handleDelete(user.id)} className="fas fa-trash"></i>
-                                <i onClick={()=> this.setState({
+                                <i onClick={() => this.setState({
                                     isEditting: !isEditting,
                                     setEdittingID: user.id
                                 })} className="fas fa-edit"></i>
-                            
+
                                 {isEditting && user.id === setEdittingID && <EditForm
                                     user={user}
                                     handleChange={this.handleChange}
@@ -98,7 +101,7 @@ export default class App extends Component {
                                 // index={index}
                                 />}
                             </div>
-                            
+
                         </div>
                     )
                 })}

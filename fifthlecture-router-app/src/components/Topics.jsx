@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, NavLink } from 'react-router-dom';
+import { Route, NavLink,Switch } from 'react-router-dom';
 import html from '../images/html.png';
 import css from '../images/css.png';
 import javascript from '../images/javacript.png';
@@ -50,10 +50,12 @@ const Topics = (props) => {
                 <li><NavLink to={`${path}/javascript`}>JavaScript</NavLink></li>
                 <li><NavLink to={`${path}/react`}>ReactJS</NavLink></li>
             </ul>
+            <switch>
             <Route path={`${path}/html`} component={HTMLpage} />
             <Route path={`${path}/css`} component={CSSpage} />
             <Route path={`${path}/javascript`} component={JavaScriptpage} />
             <Route path={`${path}/react`} component={ReactJSpage} />
+            </switch>
         </div>
     )
 };

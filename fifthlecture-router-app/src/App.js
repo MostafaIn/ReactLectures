@@ -36,7 +36,7 @@ class App extends Component {
             when={!isLoggedIn}
             message={location => {
               if (location.pathname.startsWith('/topics')) {
-                return 'Are you sure to leave this page?';
+                return 'You need to log in first !!!';
               }
             }}
           />
