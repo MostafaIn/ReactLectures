@@ -32,26 +32,38 @@ class App extends Component {
   //   })
   // }
   render() {
+    const todos= this.props.todos.map( todo => <li key={todo}>{todo}</li>)
     return (
       <div className="App">
+      <h5>{this.props.title}</h5>
         <h1>WELCOME TO REACT REDUX</h1>
         {higherOrderComp(Home)}
         <h2>Count:{this.props.count}</h2>
-        <h2>Name:{this.props.name}</h2>
+        
         {/* <h3>count:{this.state.count} </h3> */}
         {/* <button onClick={this.handleAdd}>ADD</button> */}
         <i className="fas fa-minus-circle" onClick={this.props.Minus}></i>
         {" "}
         <i className="fas fa-plus-circle" onClick={this.props.Add}></i>
-        <button onClick={this.props.ChangeName}>Change it</button>
+        <hr/>
+        <h2>Name:{this.props.name}</h2>
+        <button className="changeIt" onClick={this.props.ChangeName}>Change it</button>
+        <br />
+      <hr />
+      <hr />
+      <ul>
+      {todos}
+      </ul>
       </div>
     )
   }
 };
-const mapStateToProps = state => {
+const mapStateToProps = (state,ownProps) => {
   return {
-    count:state.count,
-    name:state.name
+    count:state.one.count,
+    name:state.one.name,
+    todos:state.todos,
+    title:`TITLE: ${ownProps.title}.`
   }  
   };
   const mapActiveToProps = dispatch =>{
