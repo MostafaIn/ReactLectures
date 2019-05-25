@@ -17,7 +17,7 @@ const reducer1 = (state = initialState, { type, payload }) => {
     //     return action.payload
     // }else{
     //     return state;
-    // }
+    // } 
     switch (type) {
         case 'ADD':
             return { ...state, count: state.count + 1 };
@@ -30,24 +30,10 @@ const reducer1 = (state = initialState, { type, payload }) => {
     }
 };
 
-const initialTodos=['item1','item2','item3'];
 
-const todosReducer = (state= initialTodos, { type, payload }) => {
-    switch (type) {
-        case 'ADD_TODO':
-            return ;
-        case 'DEL_TODO':
-            return ;
-        case 'EDIT_TODO':
-            return ;
-        default:
-            return state;
-    }
-};
 
 const allReducers= combineReducers({
-    one: reducer1,
-    todos: todosReducer
+    one: reducer1
 })
 
 const store = createStore(allReducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
