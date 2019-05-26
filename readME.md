@@ -13,8 +13,9 @@
 9. forth_lecture-React Form (8-May-19)
 11. fifth_lecture-Router (13-May-19)
 12. sixth_lecture-CRUD (16-May-19)
-13. seventh-lecture intro-redux (23-May-19)
-14. ( on going ... )
+13. seventh_lecture intro-redux (23-May-19)
+14. eighth_lecture Todos using redux (24-May-19)
+15. ( on going ... )
 
 
 ### ReactJS

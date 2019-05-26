@@ -1,0 +1,48 @@
+form{
+  width: 30%;
+  margin:auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+form > input{
+  outline: none;
+  padding: 10px;
+  border:none;
+  border-bottom: 2px solid #2d2b2d;
+  font-size: 16px;
+}
+form > button{
+  outline:none;
+  font-size: 16px;
+  border-radius: 20px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+ul{
+  width: 20%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+ul >li{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+}
+.todoItem{
+flex:3;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.fas{
+  flex:0.5;
+}
+i.fa-pencil-alt{
+  color: darkgreen;
+  cursor: pointer;
+}
+i.fa-trash-alt{
+  color: darkred;
+  cursor: pointer;
+}
