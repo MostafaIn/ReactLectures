@@ -65,7 +65,7 @@ const mapStateToProps = (state,ownProps) => {
     title:`TITLE: ${ownProps.title}.`
   }  
   };
-  const mapActiveToProps = dispatch =>{
+  const mapActionToProps = dispatch =>{
     return{
       Add: ()=> dispatch(Add()),
       Minus: ()=> dispatch(Minus()),
@@ -74,4 +74,4 @@ const mapStateToProps = (state,ownProps) => {
   };
 
 
-export default connect(mapStateToProps,mapActiveToProps)(App);
+export default connect(mapStateToProps,mapActionToProps)(App);
