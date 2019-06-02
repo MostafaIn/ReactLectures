@@ -1,19 +1,28 @@
 import { ADD_TODO, DELETE_TODO, EDIT_TODO } from "../actions/action-types";
 
-const initialTodos = ['Item 1', 'Item 2', 'Item 3'];
+const initialTodos = {
+    index:null,
+    editing: false,
+    todos: ['Item 1', 'Item 2', 'Item 3'],
+    todo:''
+};
 
 const todosReducer = (state = initialTodos, { type, payload }) => {
     switch (type) {
         case ADD_TODO:
-            return [...state, payload.todo];
+            return { ...state, todos: [...state.todos, payload.todo] };
         case DELETE_TODO:
-            const todos = [...state];
+            const todos = [...state.todos];
             todos.splice(payload.index, 1);
-            return todos;
+            return {...state,todos:todos};
         case EDIT_TODO:
-            return;
+            return {...state,
+                todos:[...state.todos,payload.todo],
+                editing:false
+            };
         default:
             return state;
     }
 };
 export default todosReducer;
+ 
