@@ -12,6 +12,6 @@ const Header = () => {
     )
 }
 const styles = {
-    header: { backgroundColor: '#03454c', color: 'white', textAlign: 'center', padding: 20 }
+    header: { backgroundColor: '#03454c', color: 'white', textAlign: 'center', padding: 22 }
 }
 export default Header
